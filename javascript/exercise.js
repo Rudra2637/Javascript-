@@ -12,12 +12,16 @@ const obj1={
 const greet=function(){
     console.log('hey its a pleasure to meet '+obj1.name);
 }
-console.log(greet());
+//console.log(greet());
+const {loggedIn} = obj1
+console.log(loggedIn);
+
+
 const obj2={1:"a",2:"b"}
 const obj3={3:"c",4:"5"}
 
 const obj4={...obj2,...obj3};
-console.log(obj4);
+/*console.log(obj4);
 
 console.log(Object.values(obj1.prop));
-console.log(obj1.hasOwnProperty("logged"));
+console.log(obj1.hasOwnProperty("logged"));*/
