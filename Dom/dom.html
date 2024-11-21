@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dom</title>
+    </head>
+
+    <body style="background-color:#212121;color:#fff;">
+        <!-- <ul class="language">
+
+        </ul> -->
+
+        <script>
+            const num=document.createElement("ul")
+            num.className="language"
+            document.body.appendChild(num)
+            const arr=[1,2,3,4]
+            arr.forEach( (item) =>{
+                const li=document.createElement("li")
+                const text=document.createTextNode(item)
+                li.appendChild(text)
+                document.querySelector(".language").appendChild(li)
+                return li
+            })
+
+
+            // function addList(langName){
+            //     const li=document.createElement("li");
+            //     const text=document.createTextNode(langName);
+            //     li.appendChild(text);
+            //     document.querySelector(".language").appendChild(li);
+            // }
+            // addList("java")
+            // addList("python")
+        </script>
+    </body>
+</html>
