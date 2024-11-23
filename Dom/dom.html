@@ -11,16 +11,29 @@
         </ul> -->
 
         <script>
+            // const num=document.createElement("ul")
+            // num.className="language"
+            // document.body.appendChild(num)
+            // const arr=[1,2,3,4]
+            // arr.forEach( (item) =>{
+            //     const li=document.createElement("li")
+            //     const text=document.createTextNode(item)
+            //     li.appendChild(text)
+            //     document.querySelector(".language").appendChild(li)
+            //     return li
+            // })
             const num=document.createElement("ul")
             num.className="language"
+            const text=document.createTextNode("hello")
+            num.appendChild(text)
             document.body.appendChild(num)
-            const arr=[1,2,3,4]
-            arr.forEach( (item) =>{
-                const li=document.createElement("li")
-                const text=document.createTextNode(item)
-                li.appendChild(text)
-                document.querySelector(".language").appendChild(li)
-                return li
+            const arr=[0,1,2,3,4]
+            arr.forEach( (item) => {
+                const hey=document.createElement("li")
+                const te=document.createTextNode(item)
+                hey.appendChild(te)
+                document.querySelector(".language").appendChild(hey)
+                return hey
             })
 
 
