@@ -4,11 +4,30 @@
 
     </head>
     <body style="background-color:#212121;color:#fff;">
+        <div>
+            Let's Get started
+        </div>
         <script>
 
+            const num=document.createElement("div");
+            num.className="parent";
+            num.innerHTML="Visca-El Barca";
+            console.log(num)
+            num.setAttribute("Id","unique")
+            num.style.color="red";
+            const ex=document.querySelector("div");
+            
+            ex.appendChild(num);
+
+            const Ele=document.createElement("div");
+            Ele.textContent="Visca-El-Catalunya";
+            const hold=ex.firstElementChild;
+            hold.replaceWith(Ele);
+            
+           
             // function create(content){
             // const num=document.createElement("ul")
-            // num.className=content
+            // num.className=conten
             // num.setAttribute("id","one")
             // // console.log(num)
             // const text=document.createTextNode(content)
